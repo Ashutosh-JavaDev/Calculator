@@ -107,5 +107,9 @@ public class Calculator extends JFrame implements ActionListener {
                 text.setText(text.getText().concat(String.valueOf(i)));
             }
         }
+        if(ae.getSource()==point){
+            text.setText(text.getText().concat("."));
+            
+        }
     }
 }
