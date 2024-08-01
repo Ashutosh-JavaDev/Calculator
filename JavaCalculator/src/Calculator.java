@@ -16,6 +16,7 @@ public class Calculator extends JFrame implements ActionListener {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(450, 550);
         setLocation(400,400);
+        functionoperation();
         setVisible(true);
     }
     public void functionoperation(){
