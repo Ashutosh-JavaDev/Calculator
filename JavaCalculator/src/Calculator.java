@@ -31,7 +31,7 @@ public class Calculator extends JFrame implements ActionListener {
         text = new JTextField();
         text.setFont(font);
         text.setEditable(false);
-        text.setBounds(10, 10, 430, 50);
+        text.setBounds(10, 20, 430, 50);
         add(text);
         // Number Button
         for (int i = 0; i < 10; i++) {
@@ -64,9 +64,9 @@ public class Calculator extends JFrame implements ActionListener {
             functionButtons[i].setFont(font);
             functionButtons[i].setFocusable(false);
         }
-        del.setBounds(15, 500, 200, 30);
+        del.setBounds(15, 480, 200, 50);
         add(del);
-        clr.setBounds(235,500,200,30);
+        clr.setBounds(235,480,200,50);
         add(clr);
 
     }
@@ -74,7 +74,7 @@ public class Calculator extends JFrame implements ActionListener {
     private void panelText() {
         // panel
         panel = new JPanel();
-        panel.setBounds(10, 80, 430, 350);
+        panel.setBounds(10, 100, 430, 350);
         panel.setLayout(new GridLayout(4, 4, 10, 10));
         panel.setFont(font);
         add(panel);
