@@ -112,6 +112,28 @@ public class Calculator extends JFrame implements ActionListener {
         }
         if(ae.getSource()==add){
             num1=Double.parseDouble(text.getText());
+            operator='+';
+            text.setText("");
+        }
+        if(ae.getSource()==sub){
+            num1=Double.parseDouble(text.getText());
+            operator='-';
+            text.setText("");
+        }
+        if(ae.getSource()==mul){
+            num1=Double.parseDouble(text.getText());
+            operator='*';
+            text.setText("");
+        }
+        if(ae.getSource()==div){
+            num1=Double.parseDouble(text.getText());
+            operator='/';
+            text.setText("");
+        }
+        if(ae.getSource()==equal){
+            num1=Double.parseDouble(text.getText());
+            operator='+';
+            text.setText("");
         }
     }
 }
