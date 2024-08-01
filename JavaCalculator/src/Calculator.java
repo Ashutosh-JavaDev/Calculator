@@ -6,6 +6,8 @@ import java.awt.event.ActionListener;
 public class Calculator extends JFrame implements ActionListener {
     JButton[] numberbutton=new JButton[10];
     JButton[] functionButtons=new JButton[7];
+    JPanel panel=new JPanel();
+    JTextField text;
     Calculator() {
         setTitle("Calculator");
     }
