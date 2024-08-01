@@ -132,7 +132,6 @@ public class Calculator extends JFrame implements ActionListener {
         }
         if(ae.getSource()==equal){
             num2=Double.parseDouble(text.getText());
-            // operator='=';
             switch(operator){
                 case '+':
                 result=num1+num2;
