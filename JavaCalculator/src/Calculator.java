@@ -37,6 +37,7 @@ public class Calculator extends JFrame implements ActionListener {
         for (int i = 0; i < 10; i++) {
             numberbutton[i] = new JButton(String.valueOf(i));
             numberbutton[i].addActionListener(this);
+            numberbutton[i].setFont(font);
             numberbutton[i].setFocusable(false);
         }
         // Function Button
@@ -59,7 +60,9 @@ public class Calculator extends JFrame implements ActionListener {
         functionButtons[7]=equal;
         // loop
         for(int i=0;i<8;i++){
-
+            functionButtons[i].addActionListener(this);
+            functionButtons[i].setFont(font);
+            functionButtons[i].setFocusable(false);
         }
 
     }
