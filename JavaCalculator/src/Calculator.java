@@ -12,6 +12,10 @@ public class Calculator extends JFrame implements ActionListener {
 
     Calculator() {
         setTitle("Calculator");
+        setLayout(null);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(450,550);
+        setVisible(true);
     }
 
     public static void main(String[] args) throws Exception {
