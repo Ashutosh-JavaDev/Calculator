@@ -41,13 +41,13 @@ public class Calculator extends JFrame implements ActionListener {
         }
         // Function Button
         add = new JButton("+");
-        sub = new JButton("+");
-        mul = new JButton("+");
-        div = new JButton("+");
-        point = new JButton("+");
-        clr = new JButton("+");
-        del = new JButton("+");
-        equal = new JButton("+");
+        sub = new JButton("-");
+        mul = new JButton("*");
+        div = new JButton("/");
+        point = new JButton(".");
+        clr = new JButton("Clear");
+        del = new JButton("Delete");
+        equal = new JButton("=");
 
         functionButtons[0]=add;
         functionButtons[1]=sub;
@@ -57,7 +57,10 @@ public class Calculator extends JFrame implements ActionListener {
         functionButtons[5]=clr;
         functionButtons[6]=del;
         functionButtons[7]=equal;
+        // loop
+        for(int i=0;i<8;i++){
 
+        }
 
     }
 
