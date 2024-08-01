@@ -108,8 +108,10 @@ public class Calculator extends JFrame implements ActionListener {
             }
         }
         if(ae.getSource()==point){
-            text.setText(text.getText().concat("."));
-            
+            text.setText(text.getText().concat(".")); 
+        }
+        if(ae.getSource()==add){
+            num1=Double.parseDouble(text.getText());
         }
     }
 }
