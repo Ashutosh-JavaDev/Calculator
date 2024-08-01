@@ -22,6 +22,7 @@ public class Calculator extends JFrame implements ActionListener {
         setSize(450, 550);
         setLocation(400, 100);
         functionoperation();
+        panelText();
         setVisible(true);
     }
 
@@ -38,25 +39,43 @@ public class Calculator extends JFrame implements ActionListener {
             numberbutton[i].addActionListener(this);
             numberbutton[i].setFocusable(false);
         }
-        // panel
-        panel = new JPanel();
-        panel.setBounds(10, 80, 430, 350);
-        panel.setLayout(new GridLayout(4, 4, 10, 10));
-        panel.setFont(font);
-        add(panel);
-        panel.add(numberbutton[1]);
-        panel.add(numberbutton[2]);
-        panel.add(numberbutton[3]);
-        panel.add(numberbutton[4]);
-        panel.add(numberbutton[5]);
-        panel.add(numberbutton[6]);
-        panel.add(numberbutton[7]);
-        panel.add(numberbutton[8]);
-        panel.add(numberbutton[9]);
-        panel.add(numberbutton[0]);
+        // // panel
+        // panel = new JPanel();
+        // panel.setBounds(10, 80, 430, 350);
+        // panel.setLayout(new GridLayout(4, 4, 10, 10));
+        // panel.setFont(font);
+        // add(panel);
+        // panel.add(numberbutton[1]);
+        // panel.add(numberbutton[2]);
+        // panel.add(numberbutton[3]);
+        // panel.add(numberbutton[4]);
+        // panel.add(numberbutton[5]);
+        // panel.add(numberbutton[6]);
+        // panel.add(numberbutton[7]);
+        // panel.add(numberbutton[8]);
+        // panel.add(numberbutton[9]);
+        // panel.add(numberbutton[0]);
         
         
 
+    }
+    private void panelText(){
+          // panel
+          panel = new JPanel();
+          panel.setBounds(10, 80, 430, 350);
+          panel.setLayout(new GridLayout(4, 4, 10, 10));
+          panel.setFont(font);
+          add(panel);
+          panel.add(numberbutton[1]);
+          panel.add(numberbutton[2]);
+          panel.add(numberbutton[3]);
+          panel.add(numberbutton[4]);
+          panel.add(numberbutton[5]);
+          panel.add(numberbutton[6]);
+          panel.add(numberbutton[7]);
+          panel.add(numberbutton[8]);
+          panel.add(numberbutton[9]);
+          panel.add(numberbutton[0]);
     }
 
     public static void main(String[] args) throws Exception {
