@@ -49,6 +49,16 @@ public class Calculator extends JFrame implements ActionListener {
         del = new JButton("+");
         equal = new JButton("+");
 
+        functionButtons[0]=add;
+        functionButtons[1]=sub;
+        functionButtons[2]=mul;
+        functionButtons[3]=div;
+        functionButtons[4]=point;
+        functionButtons[5]=clr;
+        functionButtons[6]=del;
+        functionButtons[7]=equal;
+
+
     }
 
     private void panelText() {
