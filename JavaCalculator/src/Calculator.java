@@ -44,6 +44,9 @@ public class Calculator extends JFrame implements ActionListener {
         panel.setLayout(new GridLayout(4, 4, 10, 10));
         panel.setFont(font);
         add(panel);
+        panel.add(numberbutton[1]);
+        panel.add(numberbutton[2]);
+        panel.add(numberbutton[3]);
 
     }
 
