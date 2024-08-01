@@ -4,8 +4,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Calculator extends JFrame implements ActionListener {
+    JButton[] numberbutton=new JButton[10];
+    JButton[] functionButtons=new JButton[7];
     Calculator() {
-
+        setTitle("Calculator");
     }
 
     public static void main(String[] args) throws Exception {
