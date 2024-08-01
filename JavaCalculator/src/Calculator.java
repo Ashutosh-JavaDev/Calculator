@@ -9,6 +9,7 @@ public class Calculator extends JFrame implements ActionListener {
     JPanel panel = new JPanel();
     JTextField text;
     Font font = new Font("Calibri", Font.BOLD, 25);
+    char operator;
     Calculator() {
         setTitle("Calculator");
         setLayout(null);
@@ -16,6 +17,9 @@ public class Calculator extends JFrame implements ActionListener {
         setSize(450, 550);
         setLocation(400,400);
         setVisible(true);
+    }
+    public void functionoperation(){
+
     }
 
     public static void main(String[] args) throws Exception {
