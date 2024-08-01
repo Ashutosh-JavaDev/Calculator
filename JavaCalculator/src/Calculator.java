@@ -19,7 +19,7 @@ public class Calculator extends JFrame implements ActionListener {
         functionoperation();
         setVisible(true);
     }
-    public void functionoperation(){
+    private void functionoperation(){
 
     }
 
