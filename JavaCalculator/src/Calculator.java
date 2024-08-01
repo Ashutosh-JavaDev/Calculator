@@ -33,8 +33,8 @@ public class Calculator extends JFrame implements ActionListener {
         text.setBounds(10, 10, 430, 50);
         add(text);
         // Number Button
-        for(int i=0;i<10;i++){
-            numberbutton[i]=new JButton(String.valueOf(i));
+        for (int i = 0; i < 10; i++) {
+            numberbutton[i] = new JButton(String.valueOf(i));
             numberbutton[i].addActionListener(this);
             numberbutton[i].setFocusable(false);
         }
@@ -47,6 +47,15 @@ public class Calculator extends JFrame implements ActionListener {
         panel.add(numberbutton[1]);
         panel.add(numberbutton[2]);
         panel.add(numberbutton[3]);
+        panel.add(numberbutton[4]);
+        panel.add(numberbutton[5]);
+        panel.add(numberbutton[6]);
+        panel.add(numberbutton[7]);
+        panel.add(numberbutton[8]);
+        panel.add(numberbutton[9]);
+        panel.add(numberbutton[0]);
+        
+        
 
     }
 
