@@ -64,6 +64,10 @@ public class Calculator extends JFrame implements ActionListener {
             functionButtons[i].setFont(font);
             functionButtons[i].setFocusable(false);
         }
+        del.setBounds(15, 500, 200, 30);
+        add(del);
+        clr.setBounds(235,500,200,30);
+        add(clr);
 
     }
 
