@@ -148,5 +148,8 @@ public class Calculator extends JFrame implements ActionListener {
             }
             text.setText(String.valueOf(result));
         }
+        if(ae.getSource()==clr){
+            text.setText("");
+        }
     }
 }
