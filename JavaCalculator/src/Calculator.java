@@ -134,7 +134,18 @@ public class Calculator extends JFrame implements ActionListener {
             num2=Double.parseDouble(text.getText());
             operator='=';
             switch(operator){
-                
+                case '+':
+                result=num1+num2;
+                break;
+                case '-':
+                result=num1-num2;
+                break;
+                case '*':
+                result=num1*num2;
+                break;
+                case '/':
+                result=num1/num2;
+                break;
             }
         }
     }
