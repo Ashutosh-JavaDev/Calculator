@@ -147,6 +147,7 @@ public class Calculator extends JFrame implements ActionListener {
                 result=num1/num2;
                 break;
             }
+            text.setText(String.valueOf(result));
         }
     }
 }
