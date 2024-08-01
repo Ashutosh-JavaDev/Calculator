@@ -1,4 +1,6 @@
 import javax.swing.*;
+
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,7 +17,7 @@ public class Calculator extends JFrame implements ActionListener {
         setLayout(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(450, 550);
-        setLocation(400,400);
+        setLocation(400,100);
         functionoperation();
         setVisible(true);
     }
@@ -23,11 +25,12 @@ public class Calculator extends JFrame implements ActionListener {
         // text
         text=new JTextField();
         text.setFont(font);
-        text.setBounds(50,10,100,50);
+        text.setBounds(10,10,430,50);
         add(text);
         //panel
         panel=new JPanel();
-        panel.setBounds(50,80,100,300);
+        panel.setBounds(10,80,430,350);
+        // panel.setBackground(Color.BLACK);
         panel.setFont(font);
         add(panel);
 
