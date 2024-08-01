@@ -20,6 +20,9 @@ public class Calculator extends JFrame implements ActionListener {
         setVisible(true);
     }
     private void functionoperation(){
+        text=new JTextField();
+        text.setFont(font);
+        text.setBounds(50,10,100,50);
 
     }
 
