@@ -102,6 +102,10 @@ public class Calculator extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent ae) {
-
+        for(int i=0;i<10;i++){
+            if(ae.getSource()==numberbutton[i]){
+                text.setText(text.getText().concat(String.valueOf(i)));
+            }
+        }
     }
 }
