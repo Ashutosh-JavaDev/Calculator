@@ -9,7 +9,7 @@ public class Calculator extends JFrame implements ActionListener {
     }
 
     public static void main(String[] args) throws Exception {
-        Calculator ob=new Calculator();
+        Calculator ob = new Calculator();
     }
 
     @Override
