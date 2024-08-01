@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 public class Calculator extends JFrame implements ActionListener {
     JButton[] numberbutton = new JButton[10];
     JButton[] functionButtons = new JButton[8];
-    JPanel panel = new JPanel();
+    JPanel panel;
     JTextField text;
     Font font = new Font("Calibri", Font.BOLD, 25);
     char operator;
@@ -20,10 +20,16 @@ public class Calculator extends JFrame implements ActionListener {
         setVisible(true);
     }
     private void functionoperation(){
+        // text
         text=new JTextField();
         text.setFont(font);
         text.setBounds(50,10,100,50);
         add(text);
+        //panel
+        panel=new JPanel();
+        panel.setBounds(50,80,100,300);
+        panel.setFont(font);
+        add(panel);
 
     }
 
