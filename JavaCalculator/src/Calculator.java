@@ -32,6 +32,12 @@ public class Calculator extends JFrame implements ActionListener {
         text.setEditable(false);
         text.setBounds(10, 10, 430, 50);
         add(text);
+        // Number Button
+        for(int i=0;i<10;i++){
+            numberbutton[i]=new JButton(String.valueOf(i));
+            numberbutton[i].addActionListener(this);
+            numberbutton[i].setFocusable(false);
+        }
         // panel
         panel = new JPanel();
         panel.setBounds(10, 80, 430, 350);
