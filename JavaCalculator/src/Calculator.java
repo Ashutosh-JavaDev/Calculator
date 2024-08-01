@@ -8,7 +8,8 @@ public class Calculator extends JFrame implements ActionListener {
     JButton[] functionButtons = new JButton[8];
     JPanel panel = new JPanel();
     JTextField text;
-    Font font=new Font("Calibri",Font.BOLD,25);
+    Font font = new Font("Calibri", Font.BOLD, 25);
+
     Calculator() {
         setTitle("Calculator");
     }
