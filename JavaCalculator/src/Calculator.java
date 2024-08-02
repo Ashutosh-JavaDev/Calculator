@@ -151,5 +151,8 @@ public class Calculator extends JFrame implements ActionListener {
         if(ae.getSource()==clr){
             text.setText("");
         }
+        if(ae.getSource()===del){
+            
+        }
     }
 }
