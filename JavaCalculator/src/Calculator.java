@@ -154,7 +154,8 @@ public class Calculator extends JFrame implements ActionListener {
         if(ae.getSource()==del){
             String deleteNumber=text.getName();
             int dele=deleteNumber.length();
-
+            String sub=deleteNumber.valueOf(dele);
+            // String newnum=text.setText();
         }
     }
 }
