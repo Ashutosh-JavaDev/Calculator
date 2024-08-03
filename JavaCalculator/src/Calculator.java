@@ -50,23 +50,23 @@ public class Calculator extends JFrame implements ActionListener {
         del = new JButton("Delete");
         equal = new JButton("=");
 
-        functionButtons[0]=add;
-        functionButtons[1]=sub;
-        functionButtons[2]=mul;
-        functionButtons[3]=div;
-        functionButtons[4]=point;
-        functionButtons[5]=clr;
-        functionButtons[6]=del;
-        functionButtons[7]=equal;
+        functionButtons[0] = add;
+        functionButtons[1] = sub;
+        functionButtons[2] = mul;
+        functionButtons[3] = div;
+        functionButtons[4] = point;
+        functionButtons[5] = clr;
+        functionButtons[6] = del;
+        functionButtons[7] = equal;
         // loop
-        for(int i=0;i<8;i++){
+        for (int i = 0; i < 8; i++) {
             functionButtons[i].addActionListener(this);
             functionButtons[i].setFont(font);
             functionButtons[i].setFocusable(false);
         }
         del.setBounds(15, 480, 200, 50);
         add(del);
-        clr.setBounds(230,480,300,50);
+        clr.setBounds(230, 480, 300, 50);
         add(clr);
 
     }
@@ -102,61 +102,61 @@ public class Calculator extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent ae) {
-        for(int i=0;i<10;i++){
-            if(ae.getSource()==numberbutton[i]){
+        for (int i = 0; i < 10; i++) {
+            if (ae.getSource() == numberbutton[i]) {
                 text.setText(text.getText().concat(String.valueOf(i)));
             }
         }
-        if(ae.getSource()==point){
-            text.setText(text.getText().concat(".")); 
+        if (ae.getSource() == point) {
+            text.setText(text.getText().concat("."));
         }
-        if(ae.getSource()==add){
-            num1=Double.parseDouble(text.getText());
-            operator='+';
+        if (ae.getSource() == add) {
+            num1 = Double.parseDouble(text.getText());
+            operator = '+';
             text.setText("");
         }
-        if(ae.getSource()==sub){
-            num1=Double.parseDouble(text.getText());
-            operator='-';
+        if (ae.getSource() == sub) {
+            num1 = Double.parseDouble(text.getText());
+            operator = '-';
             text.setText("");
         }
-        if(ae.getSource()==mul){
-            num1=Double.parseDouble(text.getText());
-            operator='*';
+        if (ae.getSource() == mul) {
+            num1 = Double.parseDouble(text.getText());
+            operator = '*';
             text.setText("");
         }
-        if(ae.getSource()==div){
-            num1=Double.parseDouble(text.getText());
-            operator='/';
+        if (ae.getSource() == div) {
+            num1 = Double.parseDouble(text.getText());
+            operator = '/';
             text.setText("");
         }
-        if(ae.getSource()==equal){
-            num2=Double.parseDouble(text.getText());
-            switch(operator){
+        if (ae.getSource() == equal) {
+            num2 = Double.parseDouble(text.getText());
+            switch (operator) {
                 case '+':
-                result=num1+num2;
-                break;
+                    result = num1 + num2;
+                    break;
                 case '-':
-                result=num1-num2;
-                break;
+                    result = num1 - num2;
+                    break;
                 case '*':
-                result=num1*num2;
-                break;
+                    result = num1 * num2;
+                    break;
                 case '/':
-                result=num1/num2;
-                break;
+                    result = num1 / num2;
+                    break;
             }
             text.setText(String.valueOf(result));
         }
-        if(ae.getSource()==clr){
+        if (ae.getSource() == clr) {
             text.setText("");
         }
-        if(ae.getSource()==del){
-            String deleteNumber=text.getText();
-            int dele=deleteNumber.length();
-          if(dele>0){
-            
-          }
+        if (ae.getSource() == del) {
+            String deleteNumber = text.getText();
+            int dele = deleteNumber.length();
+            if (dele > 0) {
+
+            }
         }
     }
 }
