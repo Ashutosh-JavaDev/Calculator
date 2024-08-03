@@ -66,7 +66,7 @@ public class Calculator extends JFrame implements ActionListener {
         }
         del.setBounds(15, 480, 200, 50);
         add(del);
-        clr.setBounds(230, 480, 300, 50);
+        clr.setBounds(230, 480, 200, 50);
         add(clr);
 
     }
